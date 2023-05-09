@@ -17,6 +17,20 @@ finish-args:
     - --device=dri
 modules:
   - 'shared-modules/libsoup/libsoup-2.4.json'
+  - name: unifdef
+    no-autogen: true
+    make-install-args:
+      - prefix=/app
+    sources:
+      - type: archive
+        url: https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
+        sha256: 43ce0f02ecdcdc723b2475575563ddb192e988c886d368260bc0a63aee3ac400
+        x-checker-data:
+          type: anitya
+          project-id: 5046
+          url-template: https://dotat.at/prog/unifdef/unifdef-$version.tar.xz
+    cleanup:
+      - '*'
   - name: webkitgtk
     buildsystem: cmake-ninja
     config-opts:
@@ -31,8 +45,8 @@ modules:
       - -DENABLE_SPELLCHECK=OFF
     sources:
       - type: archive
-        url: https://webkitgtk.org/releases/webkitgtk-2.38.5.tar.xz
-        sha256: 40c20c43022274df5893f22b1054fa894c3eea057389bb08aee08c5b0bb0c1a7
+        url: https://webkitgtk.org/releases/webkitgtk-2.40.1.tar.xz
+        sha256: 64e526984f8cd2161ef03ae949af99c002ff333d615e6386b460164a3c1b7ef6
         x-checker-data:
           type: html
           url: https://webkitgtk.org/releases/
