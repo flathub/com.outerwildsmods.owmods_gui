@@ -16,6 +16,25 @@
     <content_rating type="oars-1.0" />
 
     <releases>
+	    <release version="0.6.0" date="2023-05-12">
+		<url>https://github.com/Bwc9876/ow-mod-man/releases/tag/gui_v0.6.0</url>
+		<description>
+# Version 0.6.0
+
+- Made debug logs less verbose
+- Warns you if a mod is outdated by marking it as a validation error
+- Close modals when you click out of it
+- Increase disabled mod text contrast
+- Fixed logs not appearing when multiple game instances are launched
+- Changed the way search work to prioritize exact matches more, internally moved to use the core's search function instead of the GUI's
+- Fixed logs window crashing randomly
+- Fixed being able to install the same mod on different tabs
+- More consistent margins in modals
+- More reliable download tracking
+- Made closing the logs window more reliably clear the internal log store
+- Fixed an issue where the logs window would remain white on steam deck and not work (resolves #48)
+		</description>
+	    </release>
         <release version="0.5.1" date="2023-05-05" />
         <release version="0.5.0" date="2023-05-02" />
     </releases>
