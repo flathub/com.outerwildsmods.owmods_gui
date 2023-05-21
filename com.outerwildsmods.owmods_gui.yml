@@ -80,7 +80,7 @@ modules:
   - name: owmods_gui
     buildsystem: simple
     build-commands:
-      - ar x outer-wilds-mod-manager_0.6.0_amd64.deb
+      - ar x outer-wilds-mod-manager_0.6.1_amd64.deb
       - mkdir deb_data
       - tar xf data.tar.gz --directory deb_data/
       - install -Dm755 deb_data/usr/bin/outer-wilds-mod-manager /app/bin/outer-wilds-mod-manager
@@ -93,7 +93,7 @@ modules:
       - rm -rf /app/share/icons/hicolor/512x512@2x
     sources:
       - type: file
-        url: https://github.com/Bwc9876/ow-mod-man/releases/download/gui_v0.6.0/outer-wilds-mod-manager_0.6.0_amd64.deb
-        sha256: ae6eca6441a4107f33f096f7f50737b65b75c523051003e7907ba8190f9a77f5
+        url: https://github.com/Bwc9876/ow-mod-man/releases/download/gui_v0.6.1/outer-wilds-mod-manager_0.6.1_amd64.deb
+        sha256: 94c054ad57c0793c30b70c86636277df53b774e0d250afd88c5fb55756d18202
       - type: file
         path: com.outerwildsmods.owmods_gui.metainfo.xml
