@@ -1,6 +1,6 @@
 app-id: com.outerwildsmods.owmods_gui
 runtime: org.gnome.Platform
-runtime-version: "44"
+runtime-version: '44'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
@@ -16,7 +16,7 @@ finish-args:
   - --filesystem=/tmp
   - --device=dri
 modules:
-  - "shared-modules/libsoup/libsoup-2.4.json"
+  - shared-modules/libsoup/libsoup-2.4.json
   - name: unifdef
     no-autogen: true
     make-install-args:
@@ -30,7 +30,7 @@ modules:
           project-id: 5046
           url-template: https://dotat.at/prog/unifdef/unifdef-$version.tar.xz
     cleanup:
-      - "*"
+      - '*'
   - name: webkitgtk
     buildsystem: cmake-ninja
     config-opts:
@@ -45,8 +45,8 @@ modules:
       - -DENABLE_SPELLCHECK=OFF
     sources:
       - type: archive
-        url: https://webkitgtk.org/releases/webkitgtk-2.40.1.tar.xz
-        sha256: 64e526984f8cd2161ef03ae949af99c002ff333d615e6386b460164a3c1b7ef6
+        url: https://webkitgtk.org/releases/webkitgtk-2.40.2.tar.xz
+        sha256: 96898870d994da406ee7a632816dcde9a3bb395ee5f344fcb3f3b8cc8a77e000
         x-checker-data:
           type: html
           url: https://webkitgtk.org/releases/
@@ -66,8 +66,8 @@ modules:
       - make install_sw
     sources:
       - type: archive
-        url: https://www.openssl.org/source/openssl-1.1.1t.tar.gz
-        sha256: 8dee9b24bdb1dcbf0c3d1e9b02fb8f6bf22165e807f45adeb7c9677536859d3b
+        url: https://www.openssl.org/source/openssl-1.1.1u.tar.gz
+        sha256: e2f8d84b523eecd06c7be7626830370300fbcc15386bf5142d72758f6963ebc6
         x-checker-data:
           type: anitya
           project-id: 20333
@@ -84,9 +84,11 @@ modules:
       - mkdir deb_data
       - tar xf data.tar.gz --directory deb_data/
       - install -Dm755 deb_data/usr/bin/outer-wilds-mod-manager /app/bin/outer-wilds-mod-manager
-      - install -Dm755 deb_data/usr/share/applications/outer-wilds-mod-manager.desktop /app/share/applications/com.outerwildsmods.owmods_gui.desktop
+      - install -Dm755 deb_data/usr/share/applications/outer-wilds-mod-manager.desktop
+        /app/share/applications/com.outerwildsmods.owmods_gui.desktop
       - echo "MimeType=x-scheme-handler/owmods" >> /app/share/applications/com.outerwildsmods.owmods_gui.desktop
-      - sed -i "s/Exec=outer-wilds-mod-manager/Exec=outer-wilds-mod-manager %u/g" /app/share/applications/com.outerwildsmods.owmods_gui.desktop
+      - sed -i "s/Exec=outer-wilds-mod-manager/Exec=outer-wilds-mod-manager %u/g"
+        /app/share/applications/com.outerwildsmods.owmods_gui.desktop
       - install -Dm644 -t /app/share/metainfo/ com.outerwildsmods.owmods_gui.metainfo.xml
       - mkdir -p /app/share/icons/hicolor
       - cp -r deb_data/usr/share/icons/hicolor/* /app/share/icons/hicolor/
