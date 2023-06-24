@@ -16,6 +16,29 @@
     <content_rating type="oars-1.0" />
 
     <releases>
+        <release version="0.7.0" date="2023-06-24">
+            <url>https://github.com/Bwc9876/ow-mod-man/releases/tag/gui_v0.7.0</url>
+            <description>
+                # Version 0.7.0
+
+                - Major style overhaul (resolves #62)
+                - Changed logo
+                - Added a "Install Prerelease Version Of OWML" option to the setup modal, allowing
+                you to use prerelease versions of OWML
+                - Added an "Edit OWML Install" button to re-open the setup dialog
+                - Added the "Disable any mods that aren't in the list" option when importing a mod
+                list
+                - Made file system watching smarter
+                - Made the error messages for when you don't have internet a bit more user-friendly
+                (resolves #68)
+                - Made installers a bit nicer on Windows
+                - Fixed an issue where canceling a mod reinstall would not unmark it as busy (thank
+                you [dgarroDC](https://github.com/dgarroDC)!)
+                - Installed mods are now sorted by enabled
+                - Different alert severities are now supported as well as a read more link
+                - Switch alert endpoint
+            </description>
+        </release>
         <release version="0.6.1" date="2023-05-20">
             <url>https://github.com/Bwc9876/ow-mod-man/releases/tag/gui_v0.6.1</url>
             <description>
