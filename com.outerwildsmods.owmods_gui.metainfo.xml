@@ -4,8 +4,7 @@
     <id>com.outerwildsmods.owmods_gui</id>
 
     <name>Outer Wilds Mod Manager</name>
-    <summary>An easy-to-use graphical interface for installing and managing Outer Wilds mods, as
-        well as patching the game to run modded on Linux.</summary>
+    <summary>An easy-to-use app for installing and running Outer Wilds mods</summary>
 
     <metadata_license>MIT</metadata_license>
     <project_license>GPL-3.0-or-later</project_license>
@@ -16,6 +15,21 @@
     <content_rating type="oars-1.0" />
 
     <releases>
+        <release version="0.7.1" date="2023-07-07">
+            <url>https://github.com/Bwc9876/ow-mod-man/releases/tag/gui_v0.7.1</url>
+            <description>
+                # Version 0.7.1
+
+                - Better error handling and display
+                - Made errors when loading settings display in the proper place (resolves #65)
+                - Fixed errors in the About modal affecting the rest of the app on Steam Deck
+                - Fixed the logs window excessively rerendering
+                - Fixed mods not being marked as outdated on the first load (resolves #69)
+                - Fixed OWML failing to update when clicking "Update All Mods"
+                - Fixed analytics stopping an install short if it fails to connect
+                - Fixed a mod's readme opening in the wrong browser under flatpak
+            </description>
+        </release>
         <release version="0.7.0" date="2023-06-24">
             <url>https://github.com/Bwc9876/ow-mod-man/releases/tag/gui_v0.7.0</url>
             <description>
