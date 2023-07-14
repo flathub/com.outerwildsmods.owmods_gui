@@ -1,6 +1,6 @@
 app-id: com.outerwildsmods.owmods_gui
 runtime: org.gnome.Platform
-runtime-version: "44"
+runtime-version: '44'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
@@ -30,7 +30,7 @@ modules:
           project-id: 5046
           url-template: https://dotat.at/prog/unifdef/unifdef-$version.tar.xz
     cleanup:
-      - "*"
+      - '*'
   - name: webkitgtk
     buildsystem: cmake-ninja
     config-opts:
@@ -95,8 +95,8 @@ modules:
       - rm -rf /app/share/icons/hicolor/512x512@2x
     sources:
       - type: file
-        url: https://github.com/Bwc9876/ow-mod-man/releases/download/gui_v0.7.2/outer-wilds-mod-manager_0.7.2_amd64.deb
-        sha256: bcae87e5dbcfbbf2f8355211935881794ca5c1325657f53079532bc482ac3dab
+        url: https://github.com/Bwc9876/ow-mod-man/releases/download/gui_v0.7.2/outer-wilds-mod-manager_0.7.2_amd64.AppImage.tar.gz
+        sha256: 6682978afbd118b5588596604e0188117a412c54d9119e3d22de35bd4effd381
         dest-filename: outer-wilds-mod-manager-amd64.deb
         x-checker-data:
           type: json
