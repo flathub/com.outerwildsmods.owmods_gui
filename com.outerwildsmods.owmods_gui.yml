@@ -1,6 +1,6 @@
 app-id: com.outerwildsmods.owmods_gui
 runtime: org.gnome.Platform
-runtime-version: '44'
+runtime-version: "44"
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
@@ -30,7 +30,7 @@ modules:
           project-id: 5046
           url-template: https://dotat.at/prog/unifdef/unifdef-$version.tar.xz
     cleanup:
-      - '*'
+      - "*"
   - name: webkitgtk
     buildsystem: cmake-ninja
     config-opts:
@@ -80,7 +80,7 @@ modules:
   - name: owmods_gui
     buildsystem: simple
     build-commands:
-      - ar x outer-wilds-mod-manager_0.7.2_amd64.deb
+      - ar x outer-wilds-mod-manager-amd64.deb
       - mkdir deb_data
       - tar xf data.tar.gz --directory deb_data/
       - install -Dm755 deb_data/usr/bin/outer-wilds-mod-manager /app/bin/outer-wilds-mod-manager
@@ -97,5 +97,12 @@ modules:
       - type: file
         url: https://github.com/Bwc9876/ow-mod-man/releases/download/gui_v0.7.2/outer-wilds-mod-manager_0.7.2_amd64.deb
         sha256: bcae87e5dbcfbbf2f8355211935881794ca5c1325657f53079532bc482ac3dab
+        dest-filename: outer-wilds-mod-manager-amd64.deb
+        x-checker-data:
+          type: json
+          url: https://github.com/Bwc9876/ow-mod-man/releases/latest/download/latest.json
+          url-query: .platforms["linux-x86_64"].url
+          version-query: .version
+          timestamp-query: .pub_date
       - type: file
         path: com.outerwildsmods.owmods_gui.metainfo.xml
