@@ -95,8 +95,8 @@ modules:
       - rm -rf /app/share/icons/hicolor/512x512@2x
     sources:
       - type: file
-        url: https://github.com/Bwc9876/ow-mod-man/releases/download/gui_v0.9.0/outer-wilds-mod-manager_0.9.0_amd64.deb
-        sha256: 59f630e6579304ca43c05b2634e9fcd894aefc90c2c896247e1caae67a025332
+        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.10.0/outer-wilds-mod-manager_0.10.0_amd64.deb
+        sha256: 6bd1fd8557426aa640ef285daf6350fc5185580e39c2dab1b7ef0257ba79facc
         dest-filename: outer-wilds-mod-manager-amd64.deb
         x-checker-data:
           type: json
