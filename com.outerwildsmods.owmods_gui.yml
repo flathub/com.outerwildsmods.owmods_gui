@@ -45,8 +45,8 @@ modules:
       - -DENABLE_SPELLCHECK=OFF
     sources:
       - type: archive
-        url: https://webkitgtk.org/releases/webkitgtk-2.40.4.tar.xz
-        sha256: 8d163379297a2f7f51b455127f99836d9fe1572289f77b630ff3d63a2cb06dac
+        url: https://webkitgtk.org/releases/webkitgtk-2.40.5.tar.xz
+        sha256: 7de051a263668621d91a61a5eb1c3771d1a7cec900043d4afef06c326c16037f
         x-checker-data:
           type: html
           url: https://webkitgtk.org/releases/
@@ -66,8 +66,8 @@ modules:
       - make install_sw
     sources:
       - type: archive
-        url: https://www.openssl.org/source/openssl-1.1.1u.tar.gz
-        sha256: e2f8d84b523eecd06c7be7626830370300fbcc15386bf5142d72758f6963ebc6
+        url: https://www.openssl.org/source/openssl-1.1.1v.tar.gz
+        sha256: d6697e2871e77238460402e9362d47d18382b15ef9f246aba6c7bd780d38a6b0
         x-checker-data:
           type: anitya
           project-id: 20333
@@ -95,8 +95,8 @@ modules:
       - rm -rf /app/share/icons/hicolor/512x512@2x
     sources:
       - type: file
-        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.10.0/outer-wilds-mod-manager_0.10.0_amd64.deb
-        sha256: 6bd1fd8557426aa640ef285daf6350fc5185580e39c2dab1b7ef0257ba79facc
+        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.11.0/outer-wilds-mod-manager_0.11.0_amd64.deb
+        sha256: 14925f3f8949ab8d96ea3a878025c88afd4d778343ab2dbf259203daa37a40d0
         dest-filename: outer-wilds-mod-manager-amd64.deb
         x-checker-data:
           type: json
