@@ -36,7 +36,7 @@ modules:
   - name: webkitgtk
     buildsystem: cmake-ninja
     config-opts:
-      - -DCMAKE_BUILD_TYPE=None
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DPORT=GTK
       - -DUSE_SOUP2=ON
       - -DUSE_LIBSECRET=OFF
@@ -45,6 +45,9 @@ modules:
       - -DENABLE_BUBBLEWRAP_SANDBOX=OFF
       - -DENABLE_GAMEPAD=OFF
       - -DENABLE_INTROSPECTION=OFF
+      - -DENABLE_WEBDRIVER=OFF
+      - -DENABLE_DOCUMENTATION=OFF
+      - -DENABLE_MINIBROWSER=OFF
       - -DENABLE_SPELLCHECK=OFF
     sources:
       - type: archive
