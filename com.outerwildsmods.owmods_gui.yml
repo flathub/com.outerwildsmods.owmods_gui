@@ -51,8 +51,8 @@ modules:
       - -DENABLE_SPELLCHECK=OFF
     sources:
       - type: archive
-        url: https://webkitgtk.org/releases/webkitgtk-2.42.1.tar.xz
-        sha256: 6f41fac9989d3ee51c08c48de1d439cdeddecbc757e34b6180987d99b16d2499
+        url: https://webkitgtk.org/releases/webkitgtk-2.42.4.tar.xz
+        sha256: 52288b30bda22373442cecb86f9c9a569ad8d4769a1f97b352290ed92a67ed86
         x-checker-data:
           type: html
           url: https://webkitgtk.org/releases/
@@ -101,8 +101,8 @@ modules:
       - rm -rf /app/share/icons/hicolor/512x512@2x
     sources:
       - type: file
-        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.11.3/outer-wilds-mod-manager_0.11.3_amd64.deb
-        sha256: 0feae7178d1ed71a7029e32fca23ae84c489d7e2650caab9735f7989a9b77766
+        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.12.0/outer-wilds-mod-manager_0.12.0_amd64.deb
+        sha256: b13e9d18c9ceb716a74392f9ad25b22f1ecdeef01b3c7967acdce428461c0fa6
         dest-filename: outer-wilds-mod-manager-amd64.deb
         x-checker-data:
           type: json
