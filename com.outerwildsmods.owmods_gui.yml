@@ -42,6 +42,7 @@ modules:
       - -DENABLE_MINIBROWSER=OFF
       - -DENABLE_WEBDRIVER=OFF
       - -DENABLE_GAMEPAD=OFF
+      - -DUSE_JPEGXL=OFF
       - -DUSE_SOUP2=ON
       - -DENABLE_BUBBLEWRAP_SANDBOX=OFF
     sources:
