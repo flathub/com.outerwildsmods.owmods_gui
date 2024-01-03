@@ -7,8 +7,7 @@ sdk-extensions:
 command: outer-wilds-mod-manager
 rename-icon: outer-wilds-mod-manager
 finish-args:
-  - --socket=fallback-x11
-  - --socket=wayland
+  - --socket=x11
   - --share=ipc
   - --share=network
   - --filesystem=~/.steam/steam/steamapps/common/Outer Wilds
@@ -36,23 +35,19 @@ modules:
   - name: webkitgtk
     buildsystem: cmake-ninja
     config-opts:
-      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DPORT=GTK
-      - -DUSE_SOUP2=ON
-      - -DUSE_LIBSECRET=OFF
-      - -DUSE_WOFF2=OFF
-      - -DUSE_JPEGXL=OFF
-      - -DENABLE_BUBBLEWRAP_SANDBOX=OFF
-      - -DENABLE_GAMEPAD=OFF
-      - -DENABLE_INTROSPECTION=OFF
-      - -DENABLE_WEBDRIVER=OFF
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DENABLE_DOCUMENTATION=OFF
       - -DENABLE_MINIBROWSER=OFF
-      - -DENABLE_SPELLCHECK=OFF
+      - -DENABLE_WEBDRIVER=OFF
+      - -DENABLE_GAMEPAD=OFF
+      - -DUSE_JPEGXL=OFF
+      - -DUSE_SOUP2=ON
+      - -DENABLE_BUBBLEWRAP_SANDBOX=OFF
     sources:
       - type: archive
-        url: https://webkitgtk.org/releases/webkitgtk-2.42.4.tar.xz
-        sha256: 52288b30bda22373442cecb86f9c9a569ad8d4769a1f97b352290ed92a67ed86
+        url: https://webkitgtk.org/releases/webkitgtk-2.42.1.tar.xz
+        sha256: 6f41fac9989d3ee51c08c48de1d439cdeddecbc757e34b6180987d99b16d2499
         x-checker-data:
           type: html
           url: https://webkitgtk.org/releases/
