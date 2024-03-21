@@ -46,8 +46,8 @@ modules:
       - -DENABLE_BUBBLEWRAP_SANDBOX=OFF
     sources:
       - type: archive
-        url: https://webkitgtk.org/releases/webkitgtk-2.42.5.tar.xz
-        sha256: b64278c1f20b8cfdbfb5ff573c37d871aba74a1db26d9b39f74e8953fe61e749
+        url: https://webkitgtk.org/releases/webkitgtk-2.44.0.tar.xz
+        sha256: c66530e41ba59b1edba4ee89ef20b2188e273bed0497e95084729e3cfbe30c87
         x-checker-data:
           type: html
           url: https://webkitgtk.org/releases/
@@ -96,8 +96,8 @@ modules:
       - rm -rf /app/share/icons/hicolor/512x512@2x
     sources:
       - type: file
-        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.13.0/outer-wilds-mod-manager_0.13.0_amd64.deb
-        sha256: a48d0a38fce4e9270934e706c3cd74aa6a43c6d2f2c509eec530b706c20143f4
+        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.13.2/outer-wilds-mod-manager_0.13.2_amd64.deb
+        sha256: 535b0ab64818a2b87bb5b54e736ce8a19562c387a85d7ec7758687cda212a36c
         dest-filename: outer-wilds-mod-manager-amd64.deb
         x-checker-data:
           type: json
