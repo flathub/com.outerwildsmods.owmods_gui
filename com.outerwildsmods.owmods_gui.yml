@@ -13,6 +13,7 @@ finish-args:
   - --filesystem=~/.steam/steam/steamapps/common/Outer Wilds
   - --filesystem=~/Games/Heroic/OuterWilds
   - --filesystem=~/.local/share/OuterWildsModManager
+  - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/OuterWildsModManager
   - --filesystem=/tmp
   - --device=dri
   - --env=WEBKIT_DISABLE_COMPOSITING_MODE=1
@@ -96,8 +97,8 @@ modules:
       - rm -rf /app/share/icons/hicolor/512x512@2x
     sources:
       - type: file
-        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.13.2/outer-wilds-mod-manager_0.13.2_amd64.deb
-        sha256: 535b0ab64818a2b87bb5b54e736ce8a19562c387a85d7ec7758687cda212a36c
+        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.14.0/outer-wilds-mod-manager_0.14.0_amd64.deb
+        sha256: 1da82fecd7c693f6bea79553199ddfed77a9de2da758fa8bf864463237f359cd
         dest-filename: outer-wilds-mod-manager-amd64.deb
         x-checker-data:
           type: json
