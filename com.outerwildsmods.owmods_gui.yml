@@ -13,6 +13,7 @@ finish-args:
   - --filesystem=~/.steam/steam/steamapps/common/Outer Wilds
   - --filesystem=~/Games/Heroic/OuterWilds
   - --filesystem=~/.local/share/OuterWildsModManager
+  - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/OuterWildsModManager
   - --filesystem=/tmp
   - --device=dri
   - --env=WEBKIT_DISABLE_COMPOSITING_MODE=1
