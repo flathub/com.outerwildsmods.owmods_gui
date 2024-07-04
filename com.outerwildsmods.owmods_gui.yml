@@ -60,20 +60,6 @@ modules:
           - sed -i '/PATH_SUFFIXES avif/d' Source/cmake/FindAVIF.cmake
           - sed -i 's@${AVIF_INCLUDE_DIR}/avif.h@${AVIF_INCLUDE_DIR}/avif/avif.h@'
             Source/cmake/FindAVIF.cmake
-  - name: openssl11
-    buildsystem: simple
-    build-commands:
-      - ./config shared --prefix=${FLATPAK_DEST} --openssldir=/etc/ssl no-tests
-      - make -j ${FLATPAK_BUILDER_N_JOBS} all
-      - make install_sw
-    sources:
-      - type: archive
-        url: https://www.openssl.org/source/openssl-1.1.1w.tar.gz
-        sha256: cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
-        x-checker-data:
-          type: anitya
-          project-id: 20333
-          url-template: https://www.openssl.org/source/openssl-$version.tar.gz
   - name: Mono
     buildsystem: simple
     build-commands:
