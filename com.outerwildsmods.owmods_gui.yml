@@ -1,6 +1,6 @@
 app-id: com.outerwildsmods.owmods_gui
 runtime: org.gnome.Platform
-runtime-version: '44'
+runtime-version: "45"
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
@@ -32,7 +32,7 @@ modules:
           project-id: 5046
           url-template: https://dotat.at/prog/unifdef/unifdef-$version.tar.xz
     cleanup:
-      - '*'
+      - "*"
   - name: webkitgtk
     buildsystem: cmake-ninja
     config-opts:
