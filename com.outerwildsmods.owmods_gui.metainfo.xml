@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2023 Bwc9876 -->
+<!-- Copyright 2024 Bwc9876 -->
 <component type="desktop-application">
     <id>com.outerwildsmods.owmods_gui</id>
 
@@ -11,15 +11,22 @@
     </developer>
 
     <branding>
-        <color type="primary" scheme_preference="light">#99c1f1</color>
-        <color type="primary" scheme_preference="dark">#1a5fb4</color>
+        <color type="primary" scheme_preference="light">#dc8add</color>
+        <color type="primary" scheme_preference="dark">#813d9c</color>
     </branding>
 
     <metadata_license>MIT</metadata_license>
     <project_license>GPL-3.0-or-later</project_license>
 
-    <url type="homepage">https://github.com/Bwc9876/ow-mod-man</url>
-    <url type="bugtracker">https://github.com/Bwc9876/ow-mod-man/issues</url>
+    <url type="homepage">https://github.com/ow-mods/ow-mod-man</url>
+    <url type="vcs-browser">https://github.com/ow-mods/ow-mod-man</url>
+    <url type="contact">
+        https://github.com/ow-mods/ow-mod-man/blob/main/owmods_gui/HELP.md#my-issue-isnt-listed-here</url>
+    <url type="bugtracker">https://github.com/ow-mods/ow-mod-man/issues</url>
+    <url type="faq">https://github.com/ow-mods/ow-mod-man/blob/main/owmods_gui/HELP.md</url>
+    <url type="translate">https://github.com/ow-mods/ow-mod-man/blob/main/owmods_gui/TRANSLATIONS.md</url>
+    <url type="contribute">
+        https://github.com/ow-mods/ow-mod-man/blob/main/owmods_gui/CONTRIBUTING.md</url>
 
     <content_rating type="oars-1.0" />
 
@@ -27,7 +34,8 @@
         <release version="0.14.2" date="2024-07-04">
             <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.14.2</url>
             <description>
-                <p>Changed icon to a be flat and purple. Disabled auto-updater that only applied to Windows builds</p>
+                <p>Changed icon to a be flat and purple. Disabled auto-updater that only applied to
+                    Windows builds</p>
             </description>
         </release>
         <release version="0.14.1" date="2024-07-03">
@@ -180,18 +188,23 @@
         <screenshot type="default">
             <image>
                 https://github.com/Bwc9876/ow-mod-man/raw/main/.github/assets/screenshots/main.png</image>
+            <caption>The main view of the manager, several mods are listed as being installed</caption>
         </screenshot>
         <screenshot>
             <image>
                 https://github.com/Bwc9876/ow-mod-man/raw/main/.github/assets/screenshots/update.png</image>
+            <caption>The updates tab, 2 mods are listed as being outdated with options to update</caption>
         </screenshot>
         <screenshot>
             <image>
                 https://github.com/Bwc9876/ow-mod-man/raw/main/.github/assets/screenshots/logs.png</image>
+            <caption>The game logs window, a few logs are listed as the manager tries to start the
+                game</caption>
         </screenshot>
         <screenshot>
             <image>
                 https://github.com/Bwc9876/ow-mod-man/raw/main/.github/assets/screenshots/settings.png</image>
+            <caption>The settings menu, several options are available</caption>
         </screenshot>
     </screenshots>
 </component>
