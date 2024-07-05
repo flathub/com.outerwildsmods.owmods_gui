@@ -1,6 +1,6 @@
 app-id: com.outerwildsmods.owmods_gui
 runtime: org.gnome.Platform
-runtime-version: '44'
+runtime-version: "45"
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
@@ -32,7 +32,7 @@ modules:
           project-id: 5046
           url-template: https://dotat.at/prog/unifdef/unifdef-$version.tar.xz
     cleanup:
-      - '*'
+      - "*"
   - name: webkitgtk
     buildsystem: cmake-ninja
     config-opts:
@@ -60,20 +60,6 @@ modules:
           - sed -i '/PATH_SUFFIXES avif/d' Source/cmake/FindAVIF.cmake
           - sed -i 's@${AVIF_INCLUDE_DIR}/avif.h@${AVIF_INCLUDE_DIR}/avif/avif.h@'
             Source/cmake/FindAVIF.cmake
-  - name: openssl11
-    buildsystem: simple
-    build-commands:
-      - ./config shared --prefix=${FLATPAK_DEST} --openssldir=/etc/ssl no-tests
-      - make -j ${FLATPAK_BUILDER_N_JOBS} all
-      - make install_sw
-    sources:
-      - type: archive
-        url: https://www.openssl.org/source/openssl-1.1.1w.tar.gz
-        sha256: cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
-        x-checker-data:
-          type: anitya
-          project-id: 20333
-          url-template: https://www.openssl.org/source/openssl-$version.tar.gz
   - name: Mono
     buildsystem: simple
     build-commands:
@@ -97,8 +83,8 @@ modules:
       - rm -rf /app/share/icons/hicolor/512x512@2x
     sources:
       - type: file
-        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.14.1/outer-wilds-mod-manager_0.14.1_amd64.deb
-        sha256: 9b76460244f0be9ce3e6e509ee3b0c58f86a72851e87d6910a8a8d9ed4fd111c
+        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.14.2/outer-wilds-mod-manager_0.14.2_amd64.deb
+        sha256: f6c2791351bb922e03407739981e950d50329e067acecb6a6e18e9705d9362b4
         dest-filename: outer-wilds-mod-manager-amd64.deb
         x-checker-data:
           type: json

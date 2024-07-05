@@ -4,11 +4,16 @@
     <id>com.outerwildsmods.owmods_gui</id>
 
     <name>Outer Wilds Mod Manager</name>
-    <summary>An easy-to-use app for installing and running Outer Wilds mods</summary>
+    <summary>Install and run Outer Wilds mods</summary>
     <developer_name>Outer Wilds Mods</developer_name>
     <developer id="outerwildsmods.com">
         <name>Outer Wilds Mods</name>
     </developer>
+
+    <branding>
+        <color type="primary" scheme_preference="light">#99c1f1</color>
+        <color type="primary" scheme_preference="dark">#1a5fb4</color>
+    </branding>
 
     <metadata_license>MIT</metadata_license>
     <project_license>GPL-3.0-or-later</project_license>
@@ -16,30 +21,137 @@
     <url type="homepage">https://github.com/Bwc9876/ow-mod-man</url>
     <url type="bugtracker">https://github.com/Bwc9876/ow-mod-man/issues</url>
 
-    <content_rating type="oars-1.0"/>
+    <content_rating type="oars-1.0" />
 
     <releases>
-        <release version="0.14.1" date="2024-07-03"/>
-        <release version="0.14.0" date="2024-05-17"/>
-        <release version="0.13.2" date="2024-03-21"/>
-        <release version="0.13.0" date="2024-03-09"/>
-        <release version="0.12.2" date="2024-02-12"/>
-        <release version="0.12.1" date="2024-02-06"/>
-        <release version="0.12.0" date="2024-01-02"/>
-        <release version="0.11.3" date="2023-09-25"/>
-        <release version="0.11.2" date="2023-08-27"/>
-        <release version="0.11.1" date="2023-08-23"/>
-        <release version="0.11.0" date="2023-08-09"/>
-        <release version="0.10.0" date="2023-07-28"/>
-        <release version="0.9.0" date="2023-07-20"/>
-        <release version="0.8.0" date="2023-07-15"/>
-        <release version="0.7.2" date="2023-07-10"/>
-        <release version="0.7.1" date="2023-07-07"/>
-        <release version="0.7.0" date="2023-06-24"/>
-        <release version="0.6.1" date="2023-05-20"/>
-        <release version="0.6.0" date="2023-05-12"/>
-        <release version="0.5.1" date="2023-05-05"/>
-        <release version="0.5.0" date="2023-05-02"/>
+        <release version="0.14.2" date="2024-07-04">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.14.2</url>
+            <description>
+                <p>Changed icon to a be flat and purple. Disabled auto-updater that only applied to Windows builds</p>
+            </description>
+        </release>
+        <release version="0.14.1" date="2024-07-03">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.14.1</url>
+            <description>
+                <p>Performance fixes and Japenese translation. Fixed broken mods not uninstalling.</p>
+            </description>
+        </release>
+        <release version="0.14.0" date="2024-05-17">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.14.0</url>
+            <description>
+                <p>Added Vietnamese translation. Fixed issues when opening and closing the app.</p>
+            </description>
+        </release>
+        <release version="0.13.2" date="2024-03-21">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.13.2</url>
+            <description>
+                <p>Another hot fix for a recent OWML update</p>
+            </description>
+        </release>
+        <release version="0.13.0" date="2024-03-09">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.13.0</url>
+            <description>
+                <p>Added alert dismissing and option to clear shown mod warnings.
+                    Added the option to opt-out of mod analytics.</p>
+            </description>
+        </release>
+        <release version="0.12.2" date="2024-02-12">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.12.2</url>
+            <description>
+                <p>Fix a bug with mods not being recognized as updated.</p>
+            </description>
+        </release>
+        <release version="0.12.1" date="2024-02-06">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.12.1</url>
+            <description>
+                <p>Broadened options for donation links on mods. Fix issue preventing the game from
+                    starting without
+                    an internet connection.</p>
+            </description>
+        </release>
+        <release version="0.12.0" date="2024-01-02">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.12.0</url>
+            <description>
+                <p>Added the ability to donate to mod authors as well as displaying mod thumbnails
+                    thatp previously
+                    were only used on the website. Added more tools for mod developers. Better
+                    layout for setting menu.
+                </p>
+            </description>
+        </release>
+        <release version="0.11.3" date="2023-09-25">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.11.3</url>
+            <description>
+                <p>Added OWML update prompt when starting game. Added Chinese translation.</p>
+            </description>
+        </release>
+        <release version="0.11.2" date="2023-08-27">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.11.2</url>
+            <description>
+                <p>Fixed bugs with the logs window and OWML</p>
+            </description>
+        </release>
+        <release version="0.11.1" date="2023-08-23">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.11.1</url>
+            <description>
+                <p>Hide "Download Prerelease" for mods that don't have one. Performance
+                    improvements.</p>
+            </description>
+        </release>
+        <release version="0.11.0" date="2023-08-09">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.11.0</url>
+            <description>
+                <p>Added some new themes. Added a sperator for enable and disabled mods for easier
+                    skimming.
+                    Fixed some performance issues with the logs window.
+                </p>
+            </description>
+        </release>
+        <release version="0.10.0" date="2023-07-28">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.10.0</url>
+            <description>
+                <p>Added the ability to change themes. Added an "Open on GitHub" option for mods.
+                    Some style enhancements.</p>
+            </description>
+        </release>
+        <release version="0.9.0" date="2023-07-20">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.9.0</url>
+            <description>
+                <p>
+                    Added the ability to filter mods by their tags. Streamlined searching between
+                    the installed and available mods.
+                    Some UX and error message improvements.
+                </p>
+            </description>
+        </release>
+        <release version="0.8.0" date="2023-07-15">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.8.0</url>
+            <description>
+                <p>Added the ability to install a mod from a ZIP via drag n' drop. Better style and
+                    error handling.</p>
+            </description>
+        </release>
+        <release version="0.7.2" date="2023-07-10">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.7.2</url>
+        </release>
+        <release version="0.7.1" date="2023-07-07">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.7.1</url>
+        </release>
+        <release version="0.7.0" date="2023-06-24">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.7.0</url>
+        </release>
+        <release version="0.6.1" date="2023-05-20">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.6.1</url>
+        </release>
+        <release version="0.6.0" date="2023-05-12">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.6.0</url>
+        </release>
+        <release version="0.5.1" date="2023-05-05">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.5.1</url>
+        </release>
+        <release version="0.5.0" date="2023-05-02">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.5.0</url>
+        </release>
     </releases>
 
     <description>
@@ -71,11 +183,15 @@
         </screenshot>
         <screenshot>
             <image>
+                https://github.com/Bwc9876/ow-mod-man/raw/main/.github/assets/screenshots/update.png</image>
+        </screenshot>
+        <screenshot>
+            <image>
                 https://github.com/Bwc9876/ow-mod-man/raw/main/.github/assets/screenshots/logs.png</image>
         </screenshot>
         <screenshot>
             <image>
-                https://github.com/Bwc9876/ow-mod-man/raw/main/.github/assets/screenshots/about.png</image>
+                https://github.com/Bwc9876/ow-mod-man/raw/main/.github/assets/screenshots/settings.png</image>
         </screenshot>
     </screenshots>
 </component>
