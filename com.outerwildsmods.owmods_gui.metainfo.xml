@@ -24,6 +24,12 @@
     <content_rating type="oars-1.0" />
 
     <releases>
+        <release version="0.14.2" date="2024-07-04">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.14.2</url>
+            <description>
+                <p>Changed icon to a be flat and purple. Disabled auto-updater that only applied to Windows builds</p>
+            </description>
+        </release>
         <release version="0.14.1" date="2024-07-03">
             <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.14.1</url>
             <description>
