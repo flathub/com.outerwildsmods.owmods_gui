@@ -7,8 +7,9 @@ sdk-extensions:
 command: outer-wilds-mod-manager
 rename-icon: outer-wilds-mod-manager
 finish-args:
-  - --socket=x11
+  - --socket=wayland
   - --socket=fallback-x11
+  - --socket=x11 # For older flatpak versions, fallback takes precedence
   - --share=ipc
   - --share=network
   - --filesystem=~/.steam/steam/steamapps/common/Outer Wilds
