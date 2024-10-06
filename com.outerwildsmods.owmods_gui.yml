@@ -39,11 +39,12 @@ modules:
     sources:
       - type: file
         path: test.deb
-        # sha256: f6c2791351bb922e03407739981e950d50329e067acecb6a6e18e9705d9362b4
+        url: 'https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.14.2/Outer Wilds Mod Manager_0.14.2_amd64.deb'
+        sha256: 'f0e4c2f76c58916ec258f246851bea091d14d4247a2fc3e18694461b1816e13b'
         dest-filename: owmods_gui-amd64.deb
+        only-arches: [x86_64]
         x-checker-data:
           type: json
-          only-arches: [x86_64]
           url: https://github.com/Bwc9876/ow-mod-man/releases/latest/download/latest.json
           url-query: .platforms["linux-x86_64"].url | sub("AppImage.tar.gz"; "deb")
           version-query: .version
