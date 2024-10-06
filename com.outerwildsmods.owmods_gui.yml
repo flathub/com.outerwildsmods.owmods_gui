@@ -19,48 +19,6 @@ finish-args:
   - --device=dri
   - --env=WEBKIT_DISABLE_COMPOSITING_MODE=1
 modules:
-  - shared-modules/libsoup/libsoup-2.4.json
-  - name: unifdef
-    no-autogen: true
-    make-install-args:
-      - prefix=/app
-    sources:
-      - type: archive
-        url: https://dotat.at/prog/unifdef/unifdef-2.12.tar.xz
-        sha256: 43ce0f02ecdcdc723b2475575563ddb192e988c886d368260bc0a63aee3ac400
-        x-checker-data:
-          type: anitya
-          project-id: 5046
-          url-template: https://dotat.at/prog/unifdef/unifdef-$version.tar.xz
-    cleanup:
-      - "*"
-  - name: webkitgtk
-    buildsystem: cmake-ninja
-    config-opts:
-      - -DPORT=GTK
-      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DENABLE_DOCUMENTATION=OFF
-      - -DENABLE_MINIBROWSER=OFF
-      - -DENABLE_WEBDRIVER=OFF
-      - -DENABLE_GAMEPAD=OFF
-      - -DUSE_JPEGXL=OFF
-      - -DUSE_SOUP2=ON
-      - -DENABLE_BUBBLEWRAP_SANDBOX=OFF
-    sources:
-      - type: archive
-        url: https://webkitgtk.org/releases/webkitgtk-2.42.5.tar.xz
-        sha256: b64278c1f20b8cfdbfb5ff573c37d871aba74a1db26d9b39f74e8953fe61e749
-        # x-checker-data:
-        #   type: html
-        #   url: https://webkitgtk.org/releases/
-        #   version-pattern: LATEST-STABLE-(\d[\.\d]+\d)
-        #   url-template: https://webkitgtk.org/releases/webkitgtk-$version.tar.xz
-      - type: shell
-        commands:
-          - sed -i 's@NAMES avif.h@NAMES avif/avif.h@' Source/cmake/FindAVIF.cmake
-          - sed -i '/PATH_SUFFIXES avif/d' Source/cmake/FindAVIF.cmake
-          - sed -i 's@${AVIF_INCLUDE_DIR}/avif.h@${AVIF_INCLUDE_DIR}/avif/avif.h@'
-            Source/cmake/FindAVIF.cmake
   - name: Mono
     buildsystem: simple
     build-commands:
@@ -72,20 +30,22 @@ modules:
       - ar x outer-wilds-mod-manager-amd64.deb
       - mkdir deb_data
       - tar xf data.tar.gz --directory deb_data/
-      - install -Dm755 deb_data/usr/bin/outer-wilds-mod-manager /app/bin/outer-wilds-mod-manager
-      - install -Dm755 deb_data/usr/share/applications/outer-wilds-mod-manager.desktop
+      - install -Dm755 deb_data/usr/bin/owmods_gui /app/bin/outer-wilds-mod-manager
+      - install -Dm755 "deb_data/usr/share/applications/Outer Wilds Mod Manager.desktop"
         /app/share/applications/com.outerwildsmods.owmods_gui.desktop
-      - echo "MimeType=x-scheme-handler/owmods" >> /app/share/applications/com.outerwildsmods.owmods_gui.desktop
-      - sed -i "s/Exec=outer-wilds-mod-manager/Exec=outer-wilds-mod-manager %u/g"
+      - sed -i "s/owmods_gui/outer-wilds-mod-manager/g"
         /app/share/applications/com.outerwildsmods.owmods_gui.desktop
       - install -Dm644 -t /app/share/metainfo/ com.outerwildsmods.owmods_gui.metainfo.xml
-      - mkdir -p /app/share/icons/hicolor
-      - cp -r deb_data/usr/share/icons/hicolor/* /app/share/icons/hicolor/
-      - rm -rf /app/share/icons/hicolor/512x512@2x
+      - mkdir -p /app/share/icons/hicolor/128x128/apps
+      - mkdir -p /app/share/icons/hicolor/256x256@2/apps
+      - mkdir -p /app/share/icons/hicolor/32x32/apps
+      - cp deb_data/usr/share/icons/hicolor/128x128/apps/owmods_gui.png /app/share/icons/hicolor/128x128/apps/outer-wilds-mod-manager.png
+      - cp deb_data/usr/share/icons/hicolor/256x256@2/apps/owmods_gui.png /app/share/icons/hicolor/256x256@2/apps/outer-wilds-mod-manager.png
+      - cp deb_data/usr/share/icons/hicolor/32x32/apps/owmods_gui.png /app/share/icons/hicolor/32x32/apps/outer-wilds-mod-manager.png
     sources:
       - type: file
-        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.14.2/outer-wilds-mod-manager_0.14.2_amd64.deb
-        sha256: f6c2791351bb922e03407739981e950d50329e067acecb6a6e18e9705d9362b4
+        path: test.deb
+        # sha256: f6c2791351bb922e03407739981e950d50329e067acecb6a6e18e9705d9362b4
         dest-filename: outer-wilds-mod-manager-amd64.deb
         x-checker-data:
           type: json
