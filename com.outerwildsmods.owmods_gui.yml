@@ -15,6 +15,7 @@ finish-args:
   - --filesystem=~/Games/Heroic/OuterWilds
   - --filesystem=~/.local/share/OuterWildsModManager
   - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/OuterWildsModManager
+  - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Outer Wilds/
   - --filesystem=/tmp
   - --device=dri
   - --env=WEBKIT_DISABLE_COMPOSITING_MODE=1
