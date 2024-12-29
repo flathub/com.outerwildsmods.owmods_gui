@@ -28,9 +28,12 @@
     <url type="contribute">
         https://github.com/ow-mods/ow-mod-man/blob/main/owmods_gui/CONTRIBUTING.md</url>
 
-    <content_rating type="oars-1.0" />
+    <content_rating type="oars-1.0"/>
 
     <releases>
+        <release version="0.15.0" date="2024-12-29">
+            <description></description>
+        </release>
         <release version="0.14.2" date="2024-07-04">
             <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.14.2</url>
             <description>

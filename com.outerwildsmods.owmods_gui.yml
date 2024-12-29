@@ -1,6 +1,6 @@
 app-id: com.outerwildsmods.owmods_gui
 runtime: org.gnome.Platform
-runtime-version: "45"
+runtime-version: '45'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
@@ -15,7 +15,8 @@ finish-args:
   - --filesystem=~/Games/Heroic/OuterWilds
   - --filesystem=~/.local/share/OuterWildsModManager
   - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/OuterWildsModManager
-  - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Outer Wilds/
+  - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Outer
+    Wilds/
   - --filesystem=/tmp
   - --device=dri
   - --env=WEBKIT_DISABLE_COMPOSITING_MODE=1
@@ -34,7 +35,7 @@ modules:
           project-id: 5046
           url-template: https://dotat.at/prog/unifdef/unifdef-$version.tar.xz
     cleanup:
-      - "*"
+      - '*'
   - name: webkitgtk
     buildsystem: cmake-ninja
     config-opts:
@@ -85,8 +86,8 @@ modules:
       - rm -rf /app/share/icons/hicolor/512x512@2x
     sources:
       - type: file
-        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.14.2/outer-wilds-mod-manager_0.14.2_amd64.deb
-        sha256: f6c2791351bb922e03407739981e950d50329e067acecb6a6e18e9705d9362b4
+        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.0/Outer.Wilds.Mod.Manager_0.15.0_amd64.AppImage
+        sha256: 63146f04f83d98f5fcb0f82303ae243d7084d740a4bb83eba07dff9ab6e2bf3a
         dest-filename: outer-wilds-mod-manager-amd64.deb
         x-checker-data:
           type: json
