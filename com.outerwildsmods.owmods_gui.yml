@@ -31,16 +31,14 @@ modules:
       - mkdir deb_data
       - tar xf data.tar.gz --directory deb_data/
       - install -Dm755 deb_data/usr/bin/owmods_gui /app/bin/owmods_gui
-      - install -Dm755 "deb_data/usr/share/applications/Outer Wilds Mod Manager.desktop"
-        /app/share/applications/com.outerwildsmods.owmods_gui.desktop
+      - install -Dm755 "deb_data/usr/share/applications/Outer Wilds Mod Manager.desktop" /app/share/applications/com.outerwildsmods.owmods_gui.desktop
       - install -Dm644 -t /app/share/metainfo/ com.outerwildsmods.owmods_gui.metainfo.xml
       - mkdir -p /app/share/icons/hicolor
       - cp -r deb_data/usr/share/icons/hicolor/* /app/share/icons/hicolor
     sources:
       - type: file
-        path: test.deb
-        url: 'https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.14.2/Outer Wilds Mod Manager_0.14.2_amd64.deb'
-        sha256: 'f0e4c2f76c58916ec258f246851bea091d14d4247a2fc3e18694461b1816e13b'
+        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_pr_v0.15.0-1/Outer.Wilds.Mod.Manager_0.15.0-1_amd64.deb"
+        sha256: "394c7f984cc55459d2349027c23a238f2d9c4e022602a21140953002fba961cd"
         dest-filename: owmods_gui-amd64.deb
         only-arches: [x86_64]
         x-checker-data:
