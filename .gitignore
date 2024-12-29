@@ -1,2 +1,4 @@
 dist/
 .flatpak-builder/
+test.deb
+
