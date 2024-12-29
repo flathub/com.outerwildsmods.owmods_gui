@@ -37,8 +37,8 @@ modules:
       - cp -r deb_data/usr/share/icons/hicolor/* /app/share/icons/hicolor
     sources:
       - type: file
-        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_pr_v0.15.0-1/Outer.Wilds.Mod.Manager_0.15.0-1_amd64.deb"
-        sha256: "394c7f984cc55459d2349027c23a238f2d9c4e022602a21140953002fba961cd"
+        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.0/Outer.Wilds.Mod.Manager_0.15.0_amd64.deb"
+        sha256: "02a36a19c4542689a66878177e70df284aa1d9fc82fcd55fa449fad508ace45a"
         dest-filename: owmods_gui-amd64.deb
         only-arches: [x86_64]
         x-checker-data:
