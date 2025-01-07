@@ -17,7 +17,6 @@ finish-args:
   - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/OuterWildsModManager
   - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Outer Wilds/
   - --filesystem=/tmp
-  - --device=dri
 modules:
   - name: Mono
     buildsystem: simple
