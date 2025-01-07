@@ -1,6 +1,6 @@
 app-id: com.outerwildsmods.owmods_gui
 runtime: org.gnome.Platform
-runtime-version: "47"
+runtime-version: "46"
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
