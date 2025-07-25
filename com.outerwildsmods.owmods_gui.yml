@@ -1,6 +1,6 @@
 app-id: com.outerwildsmods.owmods_gui
 runtime: org.gnome.Platform
-runtime-version: "47"
+runtime-version: '47'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
@@ -15,7 +15,8 @@ finish-args:
   - --filesystem=~/Games/Heroic/OuterWilds
   - --filesystem=~/.local/share/OuterWildsModManager
   - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/OuterWildsModManager
-  - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Outer Wilds/
+  - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Outer
+    Wilds/
   - --filesystem=/tmp
   - --device=dri
 modules:
@@ -31,14 +32,15 @@ modules:
       - mkdir deb_data
       - tar xf data.tar.gz --directory deb_data/
       - install -Dm755 deb_data/usr/bin/owmods_gui /app/bin/owmods_gui
-      - install -Dm755 "deb_data/usr/share/applications/Outer Wilds Mod Manager.desktop" /app/share/applications/com.outerwildsmods.owmods_gui.desktop
+      - install -Dm755 "deb_data/usr/share/applications/Outer Wilds Mod Manager.desktop"
+        /app/share/applications/com.outerwildsmods.owmods_gui.desktop
       - install -Dm644 -t /app/share/metainfo/ com.outerwildsmods.owmods_gui.metainfo.xml
       - mkdir -p /app/share/icons/hicolor
       - cp -r deb_data/usr/share/icons/hicolor/* /app/share/icons/hicolor
     sources:
       - type: file
-        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.1/Outer.Wilds.Mod.Manager_0.15.1_amd64.deb"
-        sha256: "69ef729451f692b23e74563cb73f02fcbfed76b137e5daadeae1955fdf8b2504"
+        url: https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.2/Outer.Wilds.Mod.Manager_0.15.2_amd64.deb
+        sha256: 58d8703693860e4079d2d5e8090ab4c688af5b9bc6217440af023026db0a8804
         dest-filename: owmods_gui-amd64.deb
         only-arches: [x86_64]
         x-checker-data:
