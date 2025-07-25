@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2024 Bwc9876 -->
+<!-- Copyright 2025 Bwc9876 -->
 <component type="desktop-application">
     <id>com.outerwildsmods.owmods_gui</id>
 
@@ -31,6 +31,12 @@
     <content_rating type="oars-1.0" />
 
     <releases>
+        <release version="0.15.3" date="2025-01-25">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.15.3</url>
+            <description>
+                <p>Hotfix for updater on windows (skipped v0.15.2)</p>
+            </description>
+        </release>
         <release version="0.15.1" date="2025-01-25">
             <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.15.1</url>
             <description>
@@ -53,7 +59,7 @@
         <release version="0.14.1" date="2024-07-03">
             <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.14.1</url>
             <description>
-                <p>Performance fixes and Japenese translation. Fixed broken mods not uninstalling.</p>
+                <p>Performance fixes and Japanese translation. Fixed broken mods not uninstalling.</p>
             </description>
         </release>
         <release version="0.14.0" date="2024-05-17">
