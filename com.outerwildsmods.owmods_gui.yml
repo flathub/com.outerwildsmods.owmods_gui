@@ -39,7 +39,7 @@ modules:
     sources:
       - type: file
         url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.4/Outer.Wilds.Mod.Manager_0.15.4_amd64.deb"
-        sha256: "3407537f9eaf18ad29bc3bad12363fc22f633f1cd1ecf1fdcd398cf344c799d4"
+        sha256: "1d90c227b94d2d14d17d1f85679b9cdf065a4d502f5d4780cbb094a399915f99"
         dest-filename: owmods_gui-amd64.deb
         only-arches: [x86_64]
         x-checker-data:
