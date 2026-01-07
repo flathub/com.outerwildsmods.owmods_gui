@@ -18,6 +18,7 @@ finish-args:
   - --filesystem=~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Outer Wilds/
   - --filesystem=/tmp
   - --device=dri
+  - --env=OWMM_NO_UPDATES=1
 modules:
   - name: Mono
     buildsystem: simple
@@ -37,8 +38,8 @@ modules:
       - cp -r deb_data/usr/share/icons/hicolor/* /app/share/icons/hicolor
     sources:
       - type: file
-        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.3/Outer.Wilds.Mod.Manager_0.15.3_amd64.deb"
-        sha256: "3407537f9eaf18ad29bc3bad12363fc22f633f1cd1ecf1fdcd398cf344c799d4"
+        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.4/Outer.Wilds.Mod.Manager_0.15.4_amd64.deb"
+        sha256: "1d90c227b94d2d14d17d1f85679b9cdf065a4d502f5d4780cbb094a399915f99"
         dest-filename: owmods_gui-amd64.deb
         only-arches: [x86_64]
         x-checker-data:

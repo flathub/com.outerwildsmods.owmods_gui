@@ -31,6 +31,12 @@
     <content_rating type="oars-1.0" />
 
     <releases>
+        <release version="0.15.4" date="2026-01-07">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.15.4</url>
+            <description>
+                <p>Search now indexes mod tags, self-updating disabled on FlatPak</p>
+            </description>
+        </release>
         <release version="0.15.3" date="2025-01-25">
             <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.15.3</url>
             <description>
@@ -127,7 +133,7 @@
         <release version="0.11.0" date="2023-08-09">
             <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.11.0</url>
             <description>
-                <p>Added some new themes. Added a sperator for enable and disabled mods for easier
+                <p>Added some new themes. Added a separator for enable and disabled mods for easier
                     skimming.
                     Fixed some performance issues with the logs window.
                 </p>
