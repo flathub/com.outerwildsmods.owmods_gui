@@ -1,6 +1,6 @@
 app-id: com.outerwildsmods.owmods_gui
 runtime: org.gnome.Platform
-runtime-version: "49"
+runtime-version: "50"
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.mono6
@@ -38,8 +38,8 @@ modules:
       - cp -r deb_data/usr/share/icons/hicolor/* /app/share/icons/hicolor
     sources:
       - type: file
-        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.4/Outer.Wilds.Mod.Manager_0.15.4_amd64.deb"
-        sha256: "1d90c227b94d2d14d17d1f85679b9cdf065a4d502f5d4780cbb094a399915f99"
+        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.5/Outer.Wilds.Mod.Manager_0.15.5_amd64.deb"
+        sha256: "e4ec9e84c23155c3f671c204c02571e7a052393de42fdf4b19ec285bd338afdd"
         dest-filename: owmods_gui-amd64.deb
         only-arches: [x86_64]
         x-checker-data:
