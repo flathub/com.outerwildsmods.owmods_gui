@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2025 Bwc9876 -->
+<!-- Copyright 2026 Bwc9876 -->
 <component type="desktop-application">
     <id>com.outerwildsmods.owmods_gui</id>
 
@@ -31,6 +31,12 @@
     <content_rating type="oars-1.0" />
 
     <releases>
+        <release version="0.15.5" date="2026-04-28">
+            <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.15.5</url>
+            <description>
+                <p>Fixed regressions in search bar sync and unique name copying</p>
+            </description>
+        </release>
         <release version="0.15.4" date="2026-01-07">
             <url type="details">https://github.com/ow-mods/ow-mod-man/releases/tag/gui_v0.15.4</url>
             <description>
