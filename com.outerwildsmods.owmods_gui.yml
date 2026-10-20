@@ -28,7 +28,7 @@ modules:
   - name: owmods_gui
     buildsystem: simple
     build-commands:
-      - ar x owmods_gui-amd64.deb
+      - ar x owmods_gui.deb
       - mkdir deb_data
       - tar xf data.tar.gz --directory deb_data/
       - install -Dm755 deb_data/usr/bin/owmods_gui /app/bin/owmods_gui
@@ -38,14 +38,25 @@ modules:
       - cp -r deb_data/usr/share/icons/hicolor/* /app/share/icons/hicolor
     sources:
       - type: file
-        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.15.7/Outer.Wilds.Mod.Manager_0.15.7_amd64.deb"
-        sha256: "07398d39144d65651c3e07a0d51e835674b1d0091c7fb65bc64749b6060e75c3"
-        dest-filename: owmods_gui-amd64.deb
+        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.16.0/Outer.Wilds.Mod.Manager_0.16.0_arm64.deb"
+        sha256: "8b708cdc506a93bf6e0fcc37d60a50b2e5a92b1a364c77488fd7ff271855634c"
+        dest-filename: owmods_gui.deb
+        only-arches: [aarch64]
+        x-checker-data:
+          type: json
+          url: https://github.com/Bwc9876/ow-mod-man/releases/latest/download/latest.json
+          url-query: .platforms["linux-aarch64-deb"].url
+          version-query: .version
+          timestamp-query: .pub_date
+      - type: file
+        url: "https://github.com/ow-mods/ow-mod-man/releases/download/gui_v0.16.0/Outer.Wilds.Mod.Manager_0.16.0_amd64.deb"
+        sha256: "81ae56bd19f3341a319ce11c3ca6dfac2e413488f6b6fd8e98066c2b695d3764"
+        dest-filename: owmods_gui.deb
         only-arches: [x86_64]
         x-checker-data:
           type: json
           url: https://github.com/Bwc9876/ow-mod-man/releases/latest/download/latest.json
-          url-query: .platforms["linux-x86_64"].url | sub("AppImage"; "deb")
+          url-query: .platforms["linux-x86_64-deb"].url
           version-query: .version
           timestamp-query: .pub_date
       - type: file
